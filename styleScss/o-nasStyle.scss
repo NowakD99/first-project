@@ -1,0 +1,22 @@
+@import "_footer.scss";
+@import "_clear.scss";
+@import "_variables.scss";
+@import "_infsite.scss";
+@import "_thematicdiv.scss";
+@import "_navMenu.scss";
+
+section>div,
+footer,
+body>header {
+    border: 1px solid black;
+}
+
+
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}

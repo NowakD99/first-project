@@ -1,0 +1,547 @@
+@import "_footer.scss";
+@import "_clear.scss";
+@import "_variables.scss";
+@import "_infsite.scss";
+@import "_thematicdiv.scss";
+@import "_navMenu.scss";
+
+
+#kontakt {
+    #mapa {
+        display: none;
+    }
+}
+
+.line {
+    position: absolute;
+    font-size: 35px;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    color: $main-color;
+    
+}
+//---
+
+header {
+    position: relative;
+    height: 300px;
+
+    .tlo {
+        height: 300px;
+        width: 100%;
+        z-index: -5;
+        position: absolute;
+        top: 0;
+    }
+
+    #textHeader {
+        padding: 120px 30px 0px 10%;
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        span {
+            font-size: 13px;
+            color: white;
+        }
+    }
+}
+
+//3divy
+.threebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    background-color: white;
+
+    .information {
+        position: relative;
+        background-color: $main2-color;
+        width: 80%;
+        max-width: 354px;
+        min-height: 354px;
+        margin: 25px auto;
+    }
+
+    .information>h3 {
+        color: white;
+        text-align: center;
+        margin: $h3-margin*3 auto $h3-margin auto;
+        color: black;
+        font-size: $h3-size;
+    }
+
+    .information>span {
+        font-size: $text-size;
+        display: inline-block;
+        line-height: 1.7;
+        color: white;
+        text-align: center;
+        width: 80%;
+        margin: 20px 0 20px 10%;
+        padding-bottom: 60px;
+        color: black;
+    }
+
+    .information>button {
+        position: absolute;
+        text-transform: uppercase;
+        width: 120px;
+        height: 35px;
+        bottom: 4%;
+        left: 50%;
+        //margin-bottom: 30px;
+        transform: translate(-50%, -50%);
+        border: 3px solid $main-color;
+        background: transparent;
+        color: $main-color;
+    }
+
+    //--
+    .information:first-child {
+        background-color: $main-color;
+    }
+
+    .information:first-child>h3 {
+        color: white;
+    }
+
+    .information:first-child>span {
+        color: white;
+    }
+
+    .information:first-child>button {
+
+        border: 3px solid white;
+        background-color: $main-color;
+        color: white;
+    }
+}
+
+//wydarzenia
+#wydarzenia {
+    width: 80%;
+    padding: 20px 10% 20px 10%;
+    background-color: white;
+    box-sizing: content-box;
+    position: relative;
+
+    header {
+        height: auto;
+
+        h4 {
+            text-align: center;
+            font-size: $h4-size;
+            color: $main-color;
+            padding: $h3-margin*2 0 $h3-margin 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: $h2-size;
+            //padding: $h3-margin*2 0 $h3-margin 0;
+            width: 100%;
+            margin-bottom: 60px;
+            font-size: 35px;
+        }
+        .line {
+            top: 95px;
+        }
+    }
+
+    #miejsceNaWydarzenia {
+        .event {
+            position: relative;
+            border: 3px solid $main2-color;
+            padding-bottom: 80px;
+            margin-bottom: 25px;
+
+            .data {
+                position: absolute;
+                margin: 86px 0 0 40px;
+
+                p {
+                    position: absolute;
+                }
+
+                #dataP1 {
+                    font-size: 40px;
+                }
+
+                #dataP2 {
+                    margin: 5px 0 0 50px;
+                    color: grey;
+                }
+
+                #dataP3 {
+                    margin: 22px 0 0 55px;
+                    color: grey;
+                }
+            }
+
+            .nazwa {
+                h3 {
+                    text-align: center;
+                    //font-size: 35px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding-top: 20px;
+                }
+
+                h4 {
+                    text-align: center;
+                    font-size: $h4-size;
+                    color: $main-color;
+                }
+            }
+
+            button {
+                position: absolute;
+                text-transform: uppercase;
+                width: 145px;
+                height: 35px;
+                margin: 20px 10px 20px 0;
+                right: 0;
+                border: 3px solid $main-color;
+                background-color: rgba(0, 0, 0, 0);
+                color: $main-color;
+            }
+
+        }
+    }
+
+}
+
+//---kontakt
+#kontakt {
+    background-color: white;
+    box-sizing: content-box;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    #kont {
+
+        h4 {
+            font-size: $h4-size;
+            color: $main-color;
+            padding: $h3-margin*2 0 $h3-margin 0;
+            width: 40%;
+        }
+
+        h2 {
+            font-size: $h2-size;
+            padding: 0 0 $h3-margin 0;
+            width: 80%;
+        }
+        .test {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .line {
+            top: 60%;
+            text-align: left;
+        }
+        form {
+            position: relative;
+            padding-bottom: 80px;
+
+            .pole {
+                background-color: $main2-color;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 10px;
+                border: 1px solid $main-color;
+                padding-left: 15px;
+            }
+
+            #wiadomosc {
+                height: 130px;
+                padding-top: 15px;
+            }
+
+            #checkbox {
+                width: 25px;
+                height: 25px;
+                margin: 25px 0;
+            }
+
+            p {
+                width: 80%;
+                position: absolute;
+                font-size: 10px;
+                word-wrap: break-word;
+                left: 15%;
+                top: 270px;
+            }
+
+            #submit {
+                position: absolute;
+                text-transform: uppercase;
+                width: 200px;
+                height: 35px;
+                color: white;
+                border: 1px solid $main2-color;
+                background-color: $main-color;
+                left: 0;
+                margin-top: 95px;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 748px;
+
+        .tlo {
+            height: 748px;
+            width: 100%;
+            z-index: -5;
+            position: absolute;
+        }
+
+        #textHeader {
+            margin: 120px 17.5%;
+
+            h1 {
+                font-size: 90px;
+            }
+
+            span {
+                letter-spacing: 0.25em;
+            }
+        }
+    }
+
+
+    .threebox {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .information {
+            margin: 25px 5px;
+
+
+            h3 {
+                margin: $h3-margin*2 auto $h3-margin auto;
+
+            }
+            .line {
+                top: 13%;    
+            }
+            button {
+
+                transform: translate(-50%, 0%);
+
+            }
+        }
+    }
+
+    //wydarzenia
+    #wydarzenia {
+        header {
+            h2 {
+                font-size: 50px;
+             }
+        }
+        #miejsceNaWydarzenia {
+            .event {
+                position: relative;
+                border: 3px solid $main2-color;
+                padding-bottom: 50px;
+                margin-bottom: 25px;
+
+                .data {
+                    position: absolute;
+                    margin: 65px 0 0 40px;
+                }
+
+                .nazwa {
+                    margin-top: 40px;
+                }
+
+                button {
+                    position: absolute;
+                    text-transform: uppercase;
+                    width: 145px;
+                    height: 35px;
+                    margin: 65px 10px 20px 0;
+                    top: 0;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    header>#textHeader {
+        margin: 120px 10%;
+    }
+
+    .threebox {
+        .information {
+            h3 {
+                margin: $h3-margin*2 auto;
+            }
+
+            button {
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    #wydarzenia {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        #miejsceNaWydarzenia {
+            .event {
+                .data {
+                    margin: 65px 0 0 15%;
+                }
+
+                .nazwa {
+                    margin-left: 30%;
+
+                    h3 {
+                        text-align: left;
+                    }
+
+                    h4 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    #kontakt {
+        display: flex;
+
+        #kont {
+            width: 50%;
+
+        }
+
+        #mapa {
+            display: block;
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    body>header>#textHeader {
+        margin: 120px 10%;
+    }
+
+    .threebox {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+        box-sizing: content-box;
+    }
+
+    #wydarzenia {
+        #miejsceNaWydarzenia {
+            .event {
+                .data {
+                    margin: 65px 0 0 20%;
+                }
+
+                .nazwa {
+                    margin-left: 33%;
+                }
+
+                button {
+                    margin: 65px 10% 20px 0;
+                }
+
+            }
+        }
+    }
+
+    #kontakt {
+        background-color: white;
+        box-sizing: content-box;
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 70%;
+
+        #kont {
+
+            h4 {
+                font-size: $h4-size;
+                color: $main-color;
+                padding: $h3-margin*2 0 $h3-margin 0;
+                width: 40%;
+            }
+
+            h2 {
+                padding: 0 0 $h3-margin 0;
+                width: 80%;
+            }
+            
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                position: relative;
+                padding-bottom: 80px;
+
+                .pole {
+                    background-color: $main2-color;
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    border: 1px solid $main-color;
+                    padding-left: 15px;
+                }
+
+                #email {
+                    width: 48%;
+                }
+
+                #imie {
+                    width: 48%;
+                }
+
+                #wiadomosc {
+                    height: 130px;
+                    padding-top: 15px;
+                }
+
+                #checkbox {
+                    width: 25px;
+                    height: 25px;
+                    margin: 25px 0;
+                }
+
+                p {
+                    width: 90%;
+                    left: 10%;
+                    top: 220px;
+                }
+
+                #submit {
+                    left: 0;
+                    margin-top: 295px;
+                }
+            }
+        }
+    }
+}

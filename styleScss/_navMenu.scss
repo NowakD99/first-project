@@ -1,0 +1,232 @@
+@import "_variables.scss";
+
+header {
+    #nav {
+        figure {
+            margin-top: 15px;
+            position: absolute;
+            display: block;
+            transform: scale(0.7);
+        }
+
+        nav {
+            position: fixed;
+            height: 100%;
+            width: 40%;
+            left: 100%;
+            background-color: grey;
+            transition: 0.8s;
+            z-index: 1;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-top: 15vh;
+                height: 40%;
+
+                li {
+                    margin-left: 20px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    color: white;
+
+                    a:link,
+                    a:visited {
+                        color: white;
+                    }
+
+                    a:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+
+        .burger {
+            position: fixed;
+            width: 30px;
+            height: 25px;
+            right: 25px;
+            top: 25px;
+            z-index: 2;
+            transition: 0.8s;
+
+            .line {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: black;
+                transition: 0.2s;
+            }
+
+            .line.b {
+                margin-top: 10px;
+            }
+
+            .line.c {
+                margin-top: 20px;
+            }
+
+            .line.act {
+                margin-top: 10px;
+            }
+
+            .line.act.a {
+                animation: rotateA 0.2s linear 0.3s forwards;
+            }
+
+            .line.act.b {
+                animation: rotateB 0.2s linear 0.3s forwards;
+            }
+
+            .line.act.c {
+                animation: rotateC 0.2s linear 0.3s forwards;
+            }
+        }
+
+        .burger.active+nav {
+            left: 60%;
+        }
+    }
+}
+
+
+
+@keyframes rotateA {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes rotateB {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes rotateC {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(-45deg)
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    header {
+        #nav {
+            nav {
+                width: 30%;
+            }
+
+            .burger.active+nav {
+                left: 70%;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        #nav {
+            figure {
+                padding-left: 20px;
+                position: absolute;
+                display: block;
+                margin-left: 0;
+                transform: scale(1);
+            }
+
+            .burger.active+nav {
+                left: auto;
+            }
+
+            nav {
+                position: relative;
+                height: auto;
+                left: auto;
+                display: block;
+                padding-top: 28px;
+                width: calc(100% - 210px);
+                margin-left: 210px;
+                background-color: rgba(0, 0, 0, 0);
+                transition: 0s;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 20px;
+
+                    li {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        color: white;
+                        margin-left: 0;
+
+                        a:link,
+                        a:visited {
+                            color: white;
+                        }
+
+                        a:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+
+            .burger {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        #nav {
+            figure {
+                margin-left: 10%;
+            }
+
+            nav {
+                width: calc(100% - 10% - 210px);
+                margin-left: calc(210px + 10%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        #nav {
+            figure {
+                margin-left: 17.5%;
+                padding-left: 2.7%;
+            }
+
+            nav {
+                width: calc(100% - 17.5% - 15% - 210px);
+                margin-left: calc(210px + 17.5% + 5%);
+            }
+        }
+    }
+}

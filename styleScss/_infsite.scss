@@ -1,0 +1,139 @@
+.infsite {
+    position: relative;
+    background-color: rgba(92, 91, 89, 0);
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+
+    .tloo {
+        display: block;
+        margin: auto;
+        position: absolute;
+        filter: grayscale(1);
+        min-height: 100%;
+        z-index: -4;
+        //bottom: 0;
+
+    }
+
+    div {
+        width: 90%;
+        margin: 0 auto;
+
+
+        .textContainer {
+            position: relative;
+            color: white;
+
+            h2 {
+                font-size: $h2-size;
+                padding: $h3-margin*2 0 $h3-margin 0;
+            }
+            .line {
+                top: 29%;
+                color: white;
+                text-align: left;
+                margin: 0;
+            }
+            span {
+                display: inline-block;
+                line-height: 1.6;
+                margin-top: $h3-margin;
+                margin-bottom: $h3-margin;
+                font-size: $text-size;
+            }
+        }
+
+        button {
+            text-transform: uppercase;
+            width: 200px;
+            height: 35px;
+            margin: 20px 5%;
+            color: white;
+            border: 3px solid white;
+            background: transparent;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {
+
+    .infsite {
+        .tloo {
+            width: 260vw;
+            bottom: 300px;
+        }
+        div {
+            width: 80%;
+            position: relative;
+
+            .textContainer {
+                width: 70%;
+                margin: 0;
+                padding: 70px 0 80px 0;
+
+                h2 {
+                    font-size: 50px;
+
+                }
+                .line {
+                    top: -18px;
+                }
+                span {
+                    line-height: 1.7;
+                    font-size: $text-size+2;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                left: 75%;
+                margin: 0;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .infsite>div {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .infsite {
+        .tloo {
+            width: 195vw;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .infsite>div {
+        width: 50%;
+    }
+    .infsite {
+        .tloo {
+            width: 170vw;
+        }
+    }
+}
+@media screen and (min-width: 1401px) {
+    .infsite {
+        .tloo {
+            width: 155vw;
+        }
+    }
+}
+@media screen and (min-width: 1501px) {
+    .infsite {
+        .tloo {
+            width: 130vw;
+            bottom: 250px;
+        }
+    }
+}
+

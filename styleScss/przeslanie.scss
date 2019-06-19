@@ -1,0 +1,10 @@
+@import "_footer.scss";
+@import "_clear.scss";
+@import "_variables.scss";
+@import "_navMenu.scss";
+
+section>div,
+footer,
+body>header {
+    border: 1px solid black;
+}

@@ -1,0 +1,129 @@
+.thematicdiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    background-color: white;
+
+    figure>img {
+        width: 100%;
+    }
+}
+
+article {
+    width: 80%;
+    padding: 20px 10% 20px 10%;
+    background-color: $main2-color;
+    box-sizing: content-box;
+
+    h4 {
+        font-size: $h4-size;
+        color: $main-color;
+        padding: $h3-margin*2 0 $h3-margin 0;
+        width: 40%;
+    }
+
+    h3 {
+        font-size: 35px;
+        padding: $h3-margin*2 0 $h3-margin 0;
+        width: 80%;
+    }
+    .test {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .line {
+     top: 85%;
+     text-align: left;
+    }
+    span {
+        display: inline-block;
+        line-height: 1.5;
+        margin-top: $h3-margin;
+        font-size: $text-size;
+    }
+
+    button {
+        text-transform: uppercase;
+        width: 145px;
+        height: 35px;
+        margin: 20px 0;
+        border: 3px solid $main-color;
+        background: transparent;
+        color: $main-color;
+    }
+}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {
+
+
+    .thematicdiv {
+        flex-direction: row;
+        padding-top: 100px;
+
+        figure {
+            flex-grow: 1;
+            height: 850px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
+        }
+
+        article {
+            box-sizing: content-box;
+            width: 450px;
+            padding: 20px 2% 20px 3%;
+
+            h4 {
+                width: 180px;
+            }
+
+            h3 {
+                width: 270px;
+                font-size: 27px;
+            }
+            span {
+                width: 245px;
+                line-height: 1.8;
+            }
+
+            button {
+                display: block;
+                margin: 50px 0 0 0;
+                width: 145px;
+                height: 45px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .thematicdiv>article {
+        padding: 20px 6% 20px 6%;
+
+        button {
+            margin: 50px 0 0 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    .thematicdiv>article {
+        padding: 20px 5% 20px 8%;
+
+        button {
+            margin: 50px 0 0 0;
+        }
+    }
+}
